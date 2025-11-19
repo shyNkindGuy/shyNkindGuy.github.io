@@ -516,7 +516,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <img style="width: 200px; height: 100px" src="assets/images/cajaicafe_logo.png" alt="logo_cajaicafe">
+            <img style="width: 200px; height: 100px" src="assets/images/cajaicafe_logo.webp" alt="logo_cajaicafe" >
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -576,16 +576,12 @@
                         </h3>
                         <p class="lead mb-4">
                             Cajai Café nace en el valle de <strong>Chanchamayo (Junín, Perú)</strong>, 
-                            donde la selva alta abraza los cafetales y cada grano cuenta una historia.
+                            donde la selva alta abraza los cafetales y cada grano cuenta una historia. 
                         </p>
                         <p>
                             Crecimos entre productores que cuidan el suelo, la sombra y la cosecha selectiva 
                             de cerezas maduras. Nuestra variedad: <em>Castillo</em> 
                             con una altitud de <strong>1350 m.s.n.m.</strong>
-                        </p>
-                        <p>
-                            Buscamos un perfil <strong>dulce y cítrico con toques florales</strong>. 
-                            Tostamos en punto medio para resaltar equilibrio y dulzor natural.
                         </p>
                         <div class="alert alert-success border-0 mt-4" style="background: linear-gradient(135deg, #d4edda, #c3e6cb);">
                             <i class="bi bi-check-circle-fill me-2"></i>
@@ -599,10 +595,6 @@
                     <div class="detail-panel h-100">
                         <h4 class="mb-4"><i class="bi bi-cup-straw me-2"></i>Que esperar en taza</h4>
                         <ul class="list-unstyled">
-                            <li class="mb-3">
-                                <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                Dulzor a panela
-                            </li>
                             <li class="mb-3">
                                 <i class="bi bi-check-circle-fill text-success me-2"></i>
                                 Cítricos brillantes
@@ -621,10 +613,13 @@
                             <strong>Altitud:</strong> 1,350 m.s.n.m.
                         </div>
                         <div class="mb-3">
-                            <strong>Proceso:</strong> Lavado / Honey
+                            <strong>Proceso:</strong> Lavado
                         </div>
-                        <div>
+                        <div class="mb-3">
                             <strong>Tueste:</strong> Medio
+                        </div>
+                        <div class="mb-3">
+                            <strong>Taza:</strong> 83%
                         </div>
                     </div>
                 </div>
@@ -754,11 +749,13 @@
                         <form id="contactForm" action="https://formspree.io/f/xkgppwrk" method="POST">
                             <div class="mb-3">
                                 <label class="form-label">Nombre</label>
-                                <input type="text" class="form-control" name="nombre" required>
+                                <input type="text" class="form-control" id="validationServer" name="nombre" required>
+                                
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Email</label>
-                                <input type="email" class="form-control" name="email" required>
+                                <input type="email" class="form-control" name="email">
+                                
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Mensaje</label>
@@ -785,11 +782,16 @@
                             <a href="https://cajaicafe.me" target="_blank">cajaicafe.me</a>
                         </div>
                         <div class="mb-4">
+                            <i class="bi bi-telephone-fill text-primary me-2"></i>
+                            <a href="https://wa.me/message/LJHT4J2KOTWSI1">+51 987 654 321 (Whatsapp)</a> 
+                        </div>
+                        <div class="mb-4">
                             <i class="bi bi-geo-alt-fill text-primary me-2"></i>
                             Junín - Chanchamayo, Perú
                         </div>
-                        <hr class="my-4">
-                        
+                        <div class="mb-4">
+                            <img src="assets/images/qr_whatsapp_web.jpg" alt="QR whatsapp" style="width: 100%; border-radius: 12px;">
+                        </div>                
                     </div>
                 </div>
             </div>
@@ -823,10 +825,9 @@
                 <div class="col-md-4">
                     <h5 class="mb-3">Síguenos</h5>
                     <div class="d-flex gap-3">
-                        <a href="#" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61584022168174" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/cajaicafechanchamayo/" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/message/LJHT4J2KOTWSI1" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
